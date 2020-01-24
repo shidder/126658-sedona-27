@@ -5,8 +5,99 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
-
+    <header>
+      <nav>
+        <a><img src="logo.png" width="20px" height="40px" alt="Логотип"></a>
+        <ul>
+          <li><a href="#">Информация</a></li>
+          <li><a href="#">Фото и видео</a></li>
+          <li><a href="#">Карта штата</a></li>
+          <li><a href="#">Гостиницы</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Город Седона</h1>
+      <section>
+      <img src="banner.jpg" width="700px" height="300px" alt="Живописный вид на горы">
+      <p>Седона — небольшой городок в Аризоне,<br>
+         заслуживающий большего!
+        </p>
+      </section>
+      <section>
+        <h2>Причины поехать в Седону</h2>
+        <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        <ul>
+          <li>
+            <h3>Настоящий городок</h3>
+            <p>— №1 —</p>
+            <p>Седона — не аттракцион для туристов,<br>там течёт своя жизнь</p>
+            <img src="reason.jpg" width="700px" height="300px" alt="Дома Седоны">
+          </li>
+          <li>
+            <h3>Там есть мост дьявола</h3>
+            <p>— №2 —</p>
+            <p>Да, по нему можно пройти! Если конечно<br> вы осмелитесь</p>
+            <img src="bridge.jpg" width="700px" height="300px" alt="Мост дьявола">          
+          </li>
+          <li>
+            <h3>Небольшая площадь</h3>
+            <p>— №3 —</p>
+            <p>Все достопримечательности<br> находятся очень близко</p>
+          </li>
+          <li>
+            <h3>Красивая дорога</h3>
+            <p>— №4 —</p>
+            <p>Ехать в Седону из Лас-Вегаса совсем<br> не скучно!</p>
+          </li>
+          <li>
+            <h3>Мало туристов</h3>
+            <p>— №5 —</p>
+            <p>Большинство едет в гранд каньон<br> и толпится там</p>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>Форма поиска гостиницы</h2>
+        <p>Заинтересовались?</p>
+        <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <form>
+          <fieldset>
+            <legend>Поиск гостиницы в Седоне</legend>
+          </fieldset>
+          <label>
+            Дата заезда:<input type="date">
+          </label>
+          <label>
+            Дата выезда:<input type="date">
+          </label>
+          <label>
+            Взрослые:<input type="number">
+          </label>
+          <label>
+            Дети:<input type="number">
+          </label>
+          <button type="button">Найти</button>        
+        </form>
+        <img src="img/map.jpg" alt="Карта">
+      </section>
+      <footer>
+        <div>
+          <p>#visitSEDONA</p>
+          <p>Тел: +7(495) 666-02-66</p>
+        </div>
+        <div>
+          <ul>
+            <li><a href="https://twitter.com/">Twitter</a></li>
+            <li><a href="https://facebook.com/">Facebook</a></li>
+            <li><a href="https://youtube.com/">Youtube</a></li>
+          </ul>
+        </div>
+        <div>
+          <p>Website by</p>
+          <a href="https://htmlacademy.ru/"><img src="logo.jpg" width="150px" height="50px"></a>
+        </div>
+      </footer> 
+    </main>
   </body>
 </html>
