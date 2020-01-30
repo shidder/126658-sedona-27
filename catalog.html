@@ -7,11 +7,9 @@
 <body>
   <header>
     <nav>
-      <div>
-        <a href="index.html">
-          <img src="logo.png" width="20px" height="40px" alt="Логотип">
-        </a>
-      </div>
+      <a href="index.html">
+        <img src="logo.png" width="20" height="40" alt="Логотип">
+      </a>
       <ul>
         <li><a href="#">Информация</a></li>
         <li><a href="#">Фото и видео</a></li>
@@ -28,37 +26,37 @@
         <fieldset>
           <legend>Инфраструктура:</legend>
           <div>
-            <input type="checkbox" id="pool" checked>
+            <input type="checkbox" id="pool" name="pool" value="pool" checked>
             <label for="pool">Бассейн</label>
           </div>
           <div>
-            <input type="checkbox" id="parking">
+            <input type="checkbox" id="parking" name="parking" value="parking">
             <label for="parking">Парковка</label>
           </div>
           <div>
-            <input type="checkbox" id="wi-fi">
+            <input type="checkbox" id="wi-fi" name="wi-fi" value="wi-fi">
             <label for="wi-fi">Wi-Fi</label>
           </div>
         </fieldset>
         <fieldset>
           <legend>Тип жилья:</legend>
           <div>
-            <input type="checkbox" id="hotel" checked>
+            <input type="checkbox" id="hotel" name="hotel" value="hotel" checked>
             <label for="hotel">Гостиница</label>
           </div>
           <div>
-            <input type="checkbox" id="motel" checked>
+            <input type="checkbox" id="motel" name="motel" value="motel" checked>
             <label for="motel">Мотель</label>
           </div>
           <div>
-            <input type="checkbox" id="apartments" checked>
+            <input type="checkbox" id="apartments" name="apartments" value="apartments" checked>
             <label for="apartments">Апартаменты</label>
           </div>
         </fieldset>
         <fieldset>
           <legend>Стоимость в сутки (р):</legend>
           <label for="price">От 0 до 3000</label>
-          <input type="range" min="0" max="3000" id="price">
+          <input type="range" min="0" max="3000" id="price" name="price" value="0">
         </fieldset>
         <button type="submit">Показать</button>
       </form>
@@ -81,52 +79,58 @@
         </ul>
         <ul>
           <li>
-            <span>сортировка по возрастанию</span>
+            <a href="#">сортировка по возрастанию</a>
           </li>
           <li>
-            <span>сортировка по убыванию</span>
+            <a href="#">сортировка по убыванию</a>
           </li>
         </ul>
       </div>
       <section>
         <h3>Amara Resort & Spa</h3>
         <div>
-          <img src="amara.jpg" width="100px" height="50px" alt="Отель Amara Resort">
+          <img src="amara.jpg" width="100" height="50" alt="Отель Amara Resort">
         </div>
-        <ul>
-          <li>Гостиница</li>
-          <li>от 4000</li>
-          <li>4 звезды</li>
-          <li>Рейтинг: 8,5</li>
-        </ul>
+        <div>
+          <p>Гостиница</p>
+          <p>от 4000</p>
+        </div>
+        <div>
+          <p>4 звезды</p>
+          <p>Рейтинг: 8,5</p>
+        </div>
         <a href="#">Подробнее</a>
         <a href="#">Забронировать</a>
       </section>
       <section>
         <h3>Desert Quail Inn</h3>
         <div>
-          <img src="desert.jpg" width="100px" height="50px" alt="Отель Desert Quail Inn">
+          <img src="desert.jpg" width="100" height="50" alt="Отель Desert Quail Inn">
         </div>
-        <ul>
-          <li>Мотель</li>
-          <li>от 3000</li>
-          <li>3 звезды</li>
-          <li>Рейтинг: 8,9</li>
-        </ul>
+        <div>
+          <p>Мотель</p>
+          <p>от 3000</p>
+        </div>
+        <div>
+          <p>3 звезды</p>
+          <p>Рейтинг: 8,9</p>
+        </div>
         <a href="#">Подробнее</a>
         <a href="#">Забронировать</a>
       </section>
       <section>
         <h3>Villas At Poco Diablo</h3>
         <div>
-          <img src="villas.jpg" width="100px" height="50px" alt="Отель Villas At Poco Diablo">
+          <img src="villas.jpg" width="100" height="50" alt="Отель Villas At Poco Diablo">
         </div>
-        <ul>
-          <li>Апартаменты</li>
-          <li>от 2000</li>
-          <li>2 звезды</li>
-          <li>Рейтинг: 9,2</li>
-        </ul>
+        <div>
+          <p>Апартаменты</p>
+          <p>от 2000</p>
+        </div>
+        <div>
+          <p>2 звезды</p>
+          <p>Рейтинг: 9,2</p>
+        </div>
         <a href="#">Подробнее</a>
         <a href="#">Забронировать</a>
       </section>
@@ -142,14 +146,10 @@
       <li><a href="https://facebook.com/">Facebook</a></li>
       <li><a href="https://youtube.com/">Youtube</a></li>
     </ul>
-    <div>
-      <p>Website by</p>
-      <div>
-        <a href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="logo.jpg" width="150px" height="50px" alt="Логотип компании-разработчика">
-        </a>
-      </div>
-    </div>
+    <p>Website by</p>
+    <a href="https://htmlacademy.ru/intensive/htmlcss">
+      <img src="logo.jpg" width="150" height="50" alt="Логотип компании-разработчика">
+    </a>
   </footer>
 </body>
 </html>
