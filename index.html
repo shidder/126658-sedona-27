@@ -7,11 +7,11 @@
 <body>
   <header>
     <nav>
-      <a>
+      <a href="#">
         <img src="img/logo-sedona.png" width="140" height="71" alt="Логотип Седоны">
       </a>
       <ul>
-        <li><a href="#">Информация</a></li>
+        <li><a href="#">Информация</a></li> <!--Является ли этот пункт в принципе ссылкой?-->
         <li><a href="#">Фото и видео</a></li>
         <li><a href="#">Карта штата</a></li>
         <li><a href="catalog.html">Гостиницы</a></li>
@@ -19,7 +19,7 @@
     </nav>
   </header>
   <main>
-    <h1>Город Седона</h1>
+    <h1 class="visually-hidden">Город Седона</h1>
     <section>
       <!-- Фон через CSS
         <div>
@@ -30,7 +30,7 @@
       </p>
     </section>
     <section>
-      <h2>Причины поехать в Седону</h2>
+      <h2 class="visually-hidden">Причины поехать в Седону</h2>
       <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       <ul>
         <li>
@@ -81,22 +81,22 @@
       </ul>
     </section>
     <section>
-      <h2>Форма поиска гостиницы</h2>
+      <h2 class="visually-hidden">Форма поиска гостиницы</h2>
       <p>Заинтересовались?</p>
       <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
       <button type="button">Поиск гостиницы в Седоне</button>
-      <form>
+      <form method="POST">
         <label>
-          Дата заезда:<input type="date" id="arrival" name="arrival" >
+          Дата заезда:<input type="date" id="arrival" name="arrival" value="2017-04-24" >
         </label>
         <label>
-          Дата выезда:<input type="date" id="departure" name="departure">
+          Дата выезда:<input type="date" id="departure" name="departure" value="2017-07-04">
         </label>
         <label>
-          Взрослые:<input type="number" id="adults" name="adults">
+          Взрослые:<input type="number" id="adults" name="adults" value="2">
         </label>
         <label>
-          Дети:<input type="number" id="children" name="children">
+          Дети:<input type="number" id="children" name="children" value="0">
         </label>
         <button type="submit">Найти</button>
       </form>
