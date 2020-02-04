@@ -33,9 +33,10 @@ a {
   color: #766357;
 }
 
-.main-desc {
-  background-image: url(../img/bg.jpg);
-  background-repeat: no-repeat;
+.main-bg {  
+  background-image: url(../img/polygon.png), url(../img/bg.jpg);
+  background-color: #81b3d2; 
+  background-repeat: no-repeat;	
 }
 
 .desc-title {
@@ -50,16 +51,19 @@ a {
 }
 
 .features-list,
-.advices {
+.advices-list {
 list-style: none;
 }
 
 .features-list h3 {
   font-weight: bold;
-  font-size: 21px;  
+  font-size: 21px;
+  color: black;  
 }
 
+.main-features h3,
 .main-features {
     background-color: #81b3d2;
     color: #ffffff;
 }
+
