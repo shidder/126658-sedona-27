@@ -6,30 +6,34 @@
   <title>HTML Academy: Седона</title>
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page">
   <header class="main-header">
     <nav class="main-navigation">
-      <a class='main-header-logo' href="#">
+      <a class="main-header-logo" href="#">
         <img src="img/logo-sedona.png" width="140" height="71" alt="Логотип Седоны">
       </a>
-      <ul class="site-navigation">
-        <li><a href="#">Информация</a></li>
-        <li><a href="#">Фото и видео</a></li>
-        <li><a href="#">Карта штата</a></li>
-        <li><a href="catalog.html">Гостиницы</a></li>
+      <ul class="main-menu">
+        <li class="active">
+          <a href="#">Информация</a>
+        </li>
+        <li>
+          <a href="#">Фото и видео</a>
+        </li>
+        <li>
+          <a href="#">Карта штата</a>
+        </li>
+        <li>
+          <a href="catalog.html">Гостиницы</a>
+        </li>
       </ul>
     </nav>
   </header>
   <main class="page-main">
     <h1 class="visually-hidden">Город Седона</h1>
     <div class="main-desc">
-      <!-- Фон через CSS
-        <div>
-          <img src="background-photo.jpg" width="1200" height="800" alt="Живописный вид на горы">
-        </div>
-      -->
       <p class="desc-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
       <p class="desc-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
     </div>
@@ -37,33 +41,37 @@
       <h2 class="visually-hidden">Причины поехать в Седону</h2>
       <ul class="features-list">
         <li class="features-item">
-          <h3 class="features-title">Настоящий городок</h3>
-          <span class="features-number">— №1 —</span>
-          <p class="features-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+          <div class="main-features">
+            <h3 class="features-title">Настоящий городок</h3>
+            <span class="features-number">— №1 —</span>
+            <p class="features-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+          </div>
           <div class="features-image">
             <img src="img/city-view.jpg" width="800" height="256" alt="Вид на дома Седоны">
           </div>
           <div class="advices">
             <ul class="advices-list">
               <li class="advices-item">
-                <h4 class="advices-title">Жильё</h4>
+                <h3 class="advices-title">Жильё</h3>
                 <p class="advices-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
               </li>
               <li class="advices-item">
-                <h4 class="advices-title">Еда</h4>
+                <h3 class="advices-title">Еда</h3>
                 <p class="advices-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
               </li>
               <li class="advices-item">
-                <h4 class="advices-title">Сувениры</h4>
+                <h3 class="advices-title">Сувениры</h3>
                 <p class="advices-text">Не только китайского, но и местного производства!</p>
               </li>
             </ul>
           </div>
         </li>
         <li class="features-item">
-          <h3 class="features-title">Там есть<br> мост дьявола</h3>
-          <span class="features-number">— №2 —</span>
-          <p class="features-text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          <div class="main-features">
+            <h3 class="features-title">Там есть<br> мост дьявола</h3>
+            <span class="features-number">— №2 —</span>
+            <p class="features-text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          </div>
           <div class="features-image">
             <img src="img/bridge-view.jpg" width="800" height="256" alt="Вид на мост дьявола">
           </div>
@@ -85,15 +93,13 @@
         </li>
       </ul>
     </section>
-
-
-
-    <section class="search-hotel">
+    <section class="search-form">
       <h2 class="visually-hidden">Форма поиска гостиницы</h2>
-      <p class="search-title">Заинтересовались?</p>
-      <p class="search-text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+      <p class="form-title">Заинтересовались?</p>
+      <p class="form-text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в
+        Седоне</p>
       <button type="button">Поиск гостиницы в Седоне</button>
-      <form action="https://echo.htmlacademy.ru" method="POST">
+      <form class="search-hotel" action="https://echo.htmlacademy.ru" method="POST">
         <label>
           Дата заезда:<input type="date" id="arrival" name="arrival" value="2017-04-24">
         </label>
@@ -108,27 +114,29 @@
         </label>
         <button type="submit">Найти</button>
       </form>
-      <div>
+      <div class="map">
         <img src="img/map.jpg" width="1200" height="594" alt="Карта">
       </div>
     </section>
   </main>
-  <footer>
-    <div>
+  <footer class="main-footer">
+    <div class="contacts">
       <p>#visitSEDONA</p>
       <a href="tel:+74956660266">Тел: +7(495) 666-02-66</a>
     </div>
-    <ul>
-      <li><a href="https://twitter.com/">Twitter</a></li>
-      <li><a href="https://facebook.com/">Facebook</a></li>
-      <li><a href="https://youtube.com/">Youtube</a></li>
+    <ul class="socials-list">
+      <li class="socials-item"><a href="https://twitter.com/">Twitter</a></li>
+      <li class="socials-item"><a href="https://facebook.com/">Facebook</a></li>
+      <li class="socials-item"><a href="https://youtube.com/">Youtube</a></li>
     </ul>
-    <p>Website by</p>
-    <a href="https://htmlacademy.ru/intensive/htmlcss">html academy
-      <!--SVG
+    <div class="copyright">
+      <p>Website by</p>
+      <a href="https://htmlacademy.ru/intensive/htmlcss">html academy
+        <!--SVG
         <img src="logo-htmla.jpg" width="115" height="41" alt="Логотип компании-разработчика">
       -->
-    </a>
+      </a>
+    </div>
   </footer>
 </body>
 
