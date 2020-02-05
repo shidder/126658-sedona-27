@@ -53,9 +53,24 @@
             <img src="img/city-view.jpg" width="800" height="256" alt="Вид на дома Седоны">
           </div>
           <div class="advices">
-            <ul class="advices-list">
+            <div class="apartment">
+              <h3 class="advices-title">Жильё</h3>
+                <p class="advices-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+              
+            </div>
+            <div class="food">
+              <h3 class="advices-title">Еда</h3>
+                <p class="advices-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              
+            </div>
+            <div class="souvenirs">
+              <h3 class="advices-title">Сувениры</h3>
+                <p class="advices-text">Не только китайского, но и местного производства!</p>
+              
+            </div>
+            <!--<ul class="advices-list">
               <li class="advices-item">
-                <!--<img src="img/accomodation-icon.svg" width="75" height="72">-->
+               
                 <h3 class="advices-title">Жильё</h3>
                 <p class="advices-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
               </li>
@@ -67,7 +82,7 @@
                 <h3 class="advices-title">Сувениры</h3>
                 <p class="advices-text">Не только китайского, но и местного производства!</p>
               </li>
-            </ul>
+            </ul>-->
           </div>
         </li>
         <li class="features-item">
@@ -102,7 +117,7 @@
       <p class="form-title">Заинтересовались?</p>
       <p class="form-text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в
         Седоне</p>
-      <button type="button">Поиск гостиницы в Седоне</button>
+      <button class="search-btn" type="button">Поиск гостиницы в Седоне</button>
       <form class="search-hotel" action="https://echo.htmlacademy.ru" method="POST">
         <label>
           Дата заезда:<input type="date" id="arrival" name="arrival" value="2017-04-24">
@@ -116,7 +131,7 @@
         <label>
           Дети:<input type="number" id="children" name="children" value="0">
         </label>
-        <button type="submit">Найти</button>
+        <button class="result-btn" type="submit">Найти</button>
       </form>
       <div class="map">
         <img src="img/map.jpg" width="1200" height="594" alt="Карта">
@@ -129,16 +144,14 @@
       <a href="tel:+74956660266">Тел: +7(495) 666-02-66</a>
     </div>
     <ul class="socials-list">
-      <li class="socials-item"><a href="https://twitter.com/">Twitter</a></li>
-      <li class="socials-item"><a href="https://facebook.com/">Facebook</a></li>
-      <li class="socials-item"><a href="https://youtube.com/">Youtube</a></li>
+      <li class="socials-item twitter"><a href="https://twitter.com/">Twitter</a></li>
+      <li class="socials-item facebook"><a href="https://facebook.com/">Facebook</a></li>
+      <li class="socials-item youtube"><a href="https://youtube.com/">Youtube</a></li>
     </ul>
     <div class="copyright">
       <p>Website by</p>
-      <a href="https://htmlacademy.ru/intensive/htmlcss">html academy
-        <!--SVG
-        <img src="logo-htmla.jpg" width="115" height="41" alt="Логотип компании-разработчика">
-      -->
+      <a href="https://htmlacademy.ru/intensive/htmlcss">
+        <img src="img/logo-name.svg" width="115" height="41" alt="Логотип компании-разработчика">
       </a>
     </div>
   </footer>

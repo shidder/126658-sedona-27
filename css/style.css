@@ -3,7 +3,7 @@
   padding: 0px;
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 26px;
   font-weight: normal;
   color: #333333;
   text-transform: uppercase;
@@ -16,16 +16,18 @@ a {
 .main-menu {
   color: black;
   font-weight: bold;
-  line-height: 26px;
   list-style: none;
 }
 
 .main-menu a:hover,
-.main-menu a:focus {
+.main-menu a:focus,
+.contacts a:hover,
+.contacts a:focus {
   color: #81b3d2;
 }
 
-.main-menu a:active {
+.main-menu a:active,
+.contacts a:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -39,31 +41,104 @@ a {
   background-repeat: no-repeat;	
 }
 
-.desc-title {
+.features,
+.learn-btn,
+.book-btn,
+.rating-score,
+.hotel-info
+ {
+  line-height: 21px;
+}
+
+.desc-title,
+.features-list h3,
+.contacts,
+.hotel h3 {
   font-weight: bold;
   font-size: 21px;
   color: black;
 }
 
-.desc-title,
-.desc-text {
-  line-height: 26px;
-}
-
 .features-list,
-.advices-list {
+.advices-list,
+.socials-list,
+.filter ul {
 list-style: none;
-}
-
-.features-list h3 {
-  font-weight: bold;
-  font-size: 21px;
-  color: black;  
 }
 
 .main-features h3,
 .main-features {
     background-color: #81b3d2;
     color: #ffffff;
+}
+
+.form-title {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+  color: black;
+}
+
+.form-text {
+  line-height: 24px;
+}
+
+.search-btn,
+.result-btn {
+  font-size: 21px;
+  color: #ffffff;
+  text-transform: uppercase;   
+}
+
+.search-btn {
+  background-color: #766357;
+}
+
+.result-btn {
+  background-color: #81b3d2;
+}
+
+.copyright p {
+  color: black;
+}
+
+
+.filter p:first-child {
+  font-size: 21px;
+  font-weight: bold;
+  color: black; 
+}
+
+.filter-type,
+.filter p:nth-child(2) {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.learn-btn {
+  background-color: #81b3d2;
+}
+
+.book-btn {
+  background-color: #766357;
+}
+
+.learn-btn,
+.book-btn  {
+  color: white;  
+}
+
+/*игры с svg*/
+
+
+
+.appartment::before {
+  content: "zghzsgfhfgfgnjgfjgjgjfjfgjfj";
+  
+  background-image: url(../img/accomodation-icon.svg);
+  display: block;
+  width: 75px;
+  height: 72px;
+  padding: 20px;
 }
 
