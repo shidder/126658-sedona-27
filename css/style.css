@@ -128,17 +128,47 @@ list-style: none;
   color: white;  
 }
 
-/*игры с svg*/
-
-
-
-.appartment::before {
-  content: "zghzsgfhfgfgnjgfjgjgjfjfgjfj";
-  
-  background-image: url(../img/accomodation-icon.svg);
-  display: block;
-  width: 75px;
-  height: 72px;
-  padding: 20px;
+.socials-item {
+  width: 46px;
+  height: 48px;
+  background-color: #81b3d2;
 }
 
+.socials-item:hover,
+.socials-item:focus {
+  background-color: #669ec0;
+}
+
+.socials-item:active {
+  background-color: #5496bd;  
+}
+
+.learn-btn:hover,
+.learn-btn:focus,
+.result-btn:hover,
+.result-btn:focus {
+  background-color: #669ec0;
+}
+
+.learn-btn:active,
+.result-btn:active {
+  background-color: #5496bd;  
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.book-btn:hover,
+.book-btn:focus,
+.search-btn:hover,
+.search-btn:focus {
+  background-color: #604e43;
+}
+
+.book-btn:active,
+.search-btn:active {
+  background-color: #503e33;
+  color: rgba(255, 255, 255, 0.3);  
+}
+  
+.hotel h3:hover {
+
+}
