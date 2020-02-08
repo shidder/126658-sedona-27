@@ -169,6 +169,11 @@ list-style: none;
   color: rgba(255, 255, 255, 0.3);  
 }
   
-.hotel h3:hover {
+.hotel a:hover,
+.hotel a:focus {
+  color: #81b3d2;
+}
 
+.hotel a:active {
+  color: rgba(0, 0, 0, 0.3);
 }
