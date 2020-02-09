@@ -9,8 +9,8 @@
 </head>
 <body class="page">
   <header class="main-header">
-    <nav class="main-navigation">
-      <a class="main-header-logo" href="index.html">
+    <nav class="main-nav">
+      <a class="logo" href="index.html">
         <img src="img/logo-sedona.png" width="140" height="71" alt="Логотип">
       </a>
       <ul class="main-menu">
@@ -25,7 +25,7 @@
         </li>
         <li class="active">
           <a>Гостиницы</a>
-        </li >
+        </li>
       </ul>
     </nav>
   </header>
@@ -75,19 +75,13 @@
     <section class="search-results">
       <h2 class="visually-hidden">Результаты поиска</h2>
       <div class="filter">
-        <p>Найдено: 3</p> <!--102 - можно ли так делать и надо ли-->
+        <span>Найдено: 3</span>
         <p>Сортировка</p>
-        <ul class="filter-type">
-          <li>
-            <a href="#">По цене</a>
-          </li>
-          <li>
-            <a href="#">По типу</a>
-          </li>
-          <li>
-            <a href="#">По рейтингу</a>
-          </li>
-        </ul>
+        <div class="filter-type">
+          <a href="#">По цене</a>
+          <a href="#">По типу</a>
+          <a href="#">По рейтингу</a>
+        </div>
         <ul class="filter-direct">
           <li>
             <a href="#">сортировка по возрастанию</a>
@@ -98,7 +92,7 @@
         </ul>
       </div>
       <article class="hotel">
-        <h3><a href="#">Amara Resort & Spa</a></h3>
+        <h3 class="hotel-name"><a href="#">Amara Resort & Spa</a></h3>
         <div class="hotel-image">
           <img src="img/amara.jpg" width="135" height="90" alt="Отель Amara Resort">
         </div>
@@ -110,27 +104,27 @@
           <p>4 звезды</p>
           <p class="rating-score">Рейтинг: 8,5</p>
         </div>
-        <a class="learn-btn" href="#">Подробнее</a>
-        <a class="book-btn" href="#">Забронировать</a>
+        <a class="btn" href="#">Подробнее</a>
+        <a class="btn btn-brown" href="#">Забронировать</a>
       </article>
       <article class="hotel">
-        <h3><a href="#">Desert Quail Inn</a></h3>
+        <h3 class="hotel-name"><a href="#">Desert Quail Inn</a></h3>
         <div class="hotle-image">
           <img src="img/desert.jpg" width="135" height="90" alt="Мотель Desert Quail Inn">
-        </div >
+        </div>
         <div class="hotel-info">
           <p>Мотель</p>
           <p>от 3000</p>
         </div>
         <div class="hotel-rating">
           <p>3 звезды</p>
-          <p  class="rating-score">Рейтинг: 8,9</p>
+          <p class="rating-score">Рейтинг: 8,9</p>
         </div>
-        <a class="learn-btn" href="#">Подробнее</a>
-        <a class="book-btn" href="#">Забронировать</a>
+        <a class="btn" href="#">Подробнее</a>
+        <a class="btn btn-brown" href="#">Забронировать</a>
       </article>
       <article class="hotel">
-        <h3><a href="#">Villas At Poco Diablo</a></h3>
+        <h3 class="hotel-name"><a href="#">Villas At Poco Diablo</a></h3>
         <div class="hotel-image">
           <img src="img/villas.jpg" width="135" height="90" alt="Апартаменты Villas At Poco Diablo">
         </div>
@@ -142,8 +136,8 @@
           <p>2 звезды</p>
           <p class="rating-score">Рейтинг: 9,2</p>
         </div>
-        <a class="learn-btn" href="#">Подробнее</a>
-        <a class="book-btn" href="#">Забронировать</a>
+        <a class="btn" href="#">Подробнее</a>
+        <a class="btn btn-brown" href="#">Забронировать</a>
       </article>
     </section>
   </main>
@@ -153,9 +147,21 @@
       <a href="tel:+74956660266">Тел: +7(495) 666-02-66</a>
     </div>
     <ul class="socials-list">
-      <li class="socials-item twitter"><a href="https://twitter.com/"><img class="socials-icon" src="img/tw-icon.svg" width="17" height="15"></a></li>
-      <li class="socials-item facebook"><a href="https://facebook.com/"><img class="socials-icon" src="img/fb-icon.svg" width="12" height="22"></a></li>
-      <li class="socials-item youtube"><a href="https://youtube.com/"><img class="socials-icon" src="img/youtube-icon.svg" width="20" height="16"></a></li>
+      <li class="socials-item twitter">
+        <a href="https://twitter.com/">
+          <img class="socials-icon" src="img/tw-icon.svg" width="17" height="15">
+        </a>
+      </li>
+      <li class="socials-item facebook">
+        <a href="https://facebook.com/">
+          <img class="socials-icon" src="img/fb-icon.svg" width="12" height="22">
+        </a>
+      </li>
+      <li class="socials-item youtube">
+        <a href="https://youtube.com/">
+          <img class="socials-icon" src="img/youtube-icon.svg" width="20" height="16">
+        </a>
+      </li>
     </ul>
     <div class="copyright">
       <p>Website by</p>

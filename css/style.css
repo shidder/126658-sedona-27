@@ -1,11 +1,27 @@
+@font-face {
+  font-family: 'PT Sans';
+  src: url(../fonts/PTSans-Regular.woff2) format("woff2"),
+    url(../fonts/pt-sans.regular.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  src: url(../fonts/PTSans-Bold.woff2) format("woff2"),
+    url(../fonts/ptsansbold.woff) format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
 .page {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 14px;
   line-height: 26px;
   font-weight: normal;
-  color: #333333;
+  color: #333;
   text-transform: uppercase;
 }
 
@@ -35,18 +51,17 @@ a {
   color: #766357;
 }
 
-.main-bg {  
+.main-bg {
   background-image: url(../img/polygon.png), url(../img/bg.jpg);
-  background-color: #81b3d2; 
-  background-repeat: no-repeat;	
+  background-color: #81b3d2;
+  background-repeat: no-repeat;
 }
 
 .features,
-.learn-btn,
-.book-btn,
+.btn,
+.btn-brown,
 .rating-score,
-.hotel-info
- {
+.hotel-info {
   line-height: 21px;
 }
 
@@ -63,13 +78,13 @@ a {
 .advices-list,
 .socials-list,
 .filter ul {
-list-style: none;
+  list-style: none;
 }
 
 .main-features h3,
 .main-features {
-    background-color: #81b3d2;
-    color: #ffffff;
+  background-color: #81b3d2;
+  color: #ffffff;
 }
 
 .form-title {
@@ -87,7 +102,7 @@ list-style: none;
 .result-btn {
   font-size: 21px;
   color: #ffffff;
-  text-transform: uppercase;   
+  text-transform: uppercase;
 }
 
 .search-btn {
@@ -103,29 +118,29 @@ list-style: none;
 }
 
 
-.filter p:first-child {
+.filter span {
   font-size: 21px;
   font-weight: bold;
-  color: black; 
+  color: black;
 }
 
 .filter-type,
-.filter p:nth-child(2) {
+.filter p {
   font-size: 12px;
   line-height: 18px;
 }
 
-.learn-btn {
+.btn {
   background-color: #81b3d2;
 }
 
-.book-btn {
+.btn-brown {
   background-color: #766357;
 }
 
-.learn-btn,
-.book-btn  {
-  color: white;  
+.btn,
+.btn-brown {
+  color: white;
 }
 
 .socials-item {
@@ -140,40 +155,40 @@ list-style: none;
 }
 
 .socials-item:active {
-  background-color: #5496bd;  
+  background-color: #5496bd;
 }
 
-.learn-btn:hover,
-.learn-btn:focus,
+.btn:hover,
+.btn:focus,
 .result-btn:hover,
 .result-btn:focus {
   background-color: #669ec0;
 }
 
-.learn-btn:active,
+.btn:active,
 .result-btn:active {
-  background-color: #5496bd;  
+  background-color: #5496bd;
   color: rgba(255, 255, 255, 0.3);
 }
 
-.book-btn:hover,
-.book-btn:focus,
+.btn-brown:hover,
+.btn-brown:focus,
 .search-btn:hover,
 .search-btn:focus {
   background-color: #604e43;
 }
 
-.book-btn:active,
+.btn-brown:active,
 .search-btn:active {
   background-color: #503e33;
-  color: rgba(255, 255, 255, 0.3);  
+  color: rgba(255, 255, 255, 0.3);
 }
-  
-.hotel a:hover,
-.hotel a:focus {
+
+.hotel-name a:hover,
+.hotel-name a:focus {
   color: #81b3d2;
 }
 
-.hotel a:active {
+.hotel-name a:active {
   color: rgba(0, 0, 0, 0.3);
 }
