@@ -190,3 +190,18 @@ a {
 .hotel-name a:active {
   color: rgba(0, 0, 0, 0.3);
 }
+
+/*игры с флексом*/
+.main-nav {
+  display: flex;
+}
+a {
+  margin: auto;
+  margin-top: 0;
+}
+
+.main-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
