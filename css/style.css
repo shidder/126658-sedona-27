@@ -13,8 +13,7 @@
 }
 
 .page {
-  margin: 0;
-  padding: 0;
+
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 14px;
   line-height: 26px;
@@ -50,9 +49,14 @@ a {
 }
 
 .main-bg {
+width: 1200px;
+height: 511px; /*можно ли задавать высоту?*/
+margin: auto;
   background-image: url(../img/polygon.png), url(../img/bg.jpg);
   background-color: #81b3d2;
   background-repeat: no-repeat;
+  background-size: cover, contain;
+  
 }
 
 .features,
@@ -192,16 +196,26 @@ a {
 }
 
 /*игры с флексом*/
-.main-nav {
-  display: flex;
+.logo {
+  position: absolute;
+  left: 600px;
+  top: 0;
 }
-a {
-  margin: auto;
-  margin-top: 0;
-}
+
 
 .main-menu {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+
+
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
