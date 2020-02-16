@@ -26,6 +26,12 @@ a {
   text-decoration: none;
 }
 
+.wrapper {
+  width: 1200px; 
+  margin: auto;
+  position: relative; 
+}
+
 .main-menu {
   color: black;
   font-weight: bold;
@@ -48,14 +54,21 @@ a {
   color: #766357;
 }
 
+
+
 .main-bg {
-width: 1200px;
-height: 511px; /*можно ли задавать высоту?*/
-margin: auto;
+  height: 510px; /*можно ли задавать высоту?*/
   background-image: url(../img/polygon.png), url(../img/bg.jpg);
   background-color: #81b3d2;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;  
+  background-position: bottom -1px center, center -80px; /*разобраться*/
   
+}
+
+.main-bg img {
+  position: relative;
+  left: 31%;
+  top: 15%;
 }
 
 .features,
@@ -78,7 +91,8 @@ margin: auto;
 .features-list,
 .advices-list,
 .socials-list,
-.filter ul {
+.filter ul,
+.form-wrapper {
   list-style: none;
 }
 
@@ -104,6 +118,7 @@ margin: auto;
   font-size: 21px;
   color: #ffffff;
   text-transform: uppercase;
+  font-weight: bold;
 }
 
 .search-btn {
@@ -194,23 +209,8 @@ margin: auto;
   color: rgba(0, 0, 0, 0.3);
 }
 
-/*игры с флексом*/
-.logo {
-  position: absolute;
-  left: 565px;
-  top: 0;
-}
-
-
-.main-menu {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  
-}
-
-
-
+/*Стили по блокам*/
+/*header*/
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -218,3 +218,226 @@ margin: auto;
   height: 1px;
   margin: -1px;
 }
+
+.logo {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  margin-left: -70px;
+  width: 244px;
+  right: -35px;
+}
+
+.main-menu {
+  position: relative;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  left: 8%;  
+}
+
+ul { /*можно ли так?*/
+  padding-inline-start: 0;
+/*  margin: 0;
+  padding: 0;*/
+}
+
+.main-menu li {
+  width: 239px;
+}
+
+.main-menu li:nth-child(3),
+.main-menu li:nth-child(4)  {
+  text-align: right;
+}
+
+/*main*/
+.desc-title {
+  width: 440px;
+  text-align: center;
+  padding-top: 61px;
+  margin: 0 auto;
+  padding-bottom: 38px;
+}
+
+.desc-text {
+  width: 489px;
+  margin: 0 auto;
+  padding-bottom: 56px;
+}
+
+/*features*/
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-features {
+  display: flex;
+}
+
+.main-features:last-of-type .features-image {
+  order:-1;
+}
+
+.features-list li:nth-child(3),
+.features-list li:nth-child(4),
+.features-list li:nth-child(5) {
+  width: 400px;
+  text-align: center;
+  background-color: #eeeeee;
+}
+
+.features-list li:nth-child(3) .features-title {
+  width: 119px;
+  height: 127px; /*потом удалить*/
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.features-list li:nth-child(4) .features-title,
+.features-list li:nth-child(5) .features-title {
+  width: 100px;
+  height: 127px; /*потом удалить*/
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.features-list li:nth-child(3) .features-text {
+  width: 210px;
+  margin-left: auto;
+  margin-right: auto;  
+}
+
+.features-list li:nth-child(4) .features-text {
+  width: 263px;
+  margin-left: auto;
+  margin-right: auto;  
+}
+
+.features-list li:nth-child(5) .features-text { /*нужны ли проблемы, если и так всё норм*/
+  width: 248px;
+  margin-left: auto;
+  margin-right: auto;  
+}
+
+/*advices*/
+.advices {
+  display: flex;
+  height: 330px /*потом удалить*/
+}
+
+
+ 
+.apartment,
+.food,
+.souvenirs {
+  width: 400px;
+  text-align: center;
+}
+
+/*search-form*/ /*присваивать ли инпутам классы*/
+.form-title,
+.form-text {
+  width: 100%;
+  text-align: center;
+}
+
+.form-title {
+ padding-top: 10px;
+padding-bottom: 10px; /*delete*/
+}
+
+.form-text {
+  height: 80px;
+}
+
+.search-btn {
+  width: 568px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  position: relative;
+  left: 50%;
+  margin-left: -285px;
+  border: none;
+  margin-bottom: 55px;
+  z-index: 20;
+  
+}
+
+
+
+.search-hotel {
+  position: relative;
+  bottom: 55px;
+  z-index: 20;
+  margin: 0 auto;
+  background-color: white;
+  width: 568px;
+  text-align: center;
+  padding-top: 55px;
+  padding-bottom: 55px;
+
+}
+
+.form-field {
+  display: flex;
+  background-color: white;
+  z-index: 2;
+  }
+}
+
+.label-date {
+  width: 112px;
+}
+
+.input-date {
+  width: 346px;
+  height: 38px;
+  margin-bottom: 30px;
+}
+
+.input-date:first-of-type {
+  box-sizing: border-box;
+  
+ 
+}
+
+.quantity-field {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 55px;
+  
+}
+
+.btn-quantity {
+  height: 38px;
+}
+
+.result-btn {
+  width: 458px;
+  padding-top: 17px;
+  padding-bottom: 22px;
+  position: relative;
+  left: 50%;
+  margin-left: -229px;
+  border: none;
+  z-index: 2;
+}
+
+.input-quantity {
+  height: 38px;
+  
+}
+
+
+.map {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  
+}
+}
+
