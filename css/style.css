@@ -72,7 +72,7 @@ a {
 .btn,
 .btn-brown,
 .rating-score,
-.hotel-info {
+.hotel-desc {
   line-height: 21px;
 }
 
@@ -514,5 +514,30 @@ ul {
 
 .hotel {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hotel-wrapper {
+  flex-grow: 1;
+  margin-left: 30px;
+}
+
+.hotel-desc {
+  display: flex;
+}
+
+.btn {
+  width: 110px;
+}
+
+.btn-brown {
+  width: 142px;
+  margin-left: 6px;
+}
+
+.rating-score::before {
+  content: "";
+  background-image: url(../img/hotel-star.svg);
+  
 }
