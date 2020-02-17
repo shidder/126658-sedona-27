@@ -1,3 +1,4 @@
+/*Общие стили*/
 @font-face {
   font-family: "PT Sans";
   src: url("../fonts/ptsans.woff2") format("woff2"),
@@ -13,7 +14,6 @@
 }
 
 .page {
-
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 14px;
   line-height: 26px;
@@ -27,9 +27,9 @@ a {
 }
 
 .wrapper {
-  width: 1200px; 
+  width: 1200px;
   margin: auto;
-  position: relative; 
+  position: relative;
 }
 
 .main-menu {
@@ -54,15 +54,12 @@ a {
   color: #766357;
 }
 
-
-
 .main-bg {
-  height: 510px; /*можно ли задавать высоту?*/
+  height: 510px;
   background-image: url(../img/polygon.png), url(../img/bg.jpg);
   background-color: #81b3d2;
-  background-repeat: no-repeat;  
-  background-position: bottom -1px center, center -80px; /*разобраться*/
-  
+  background-repeat: no-repeat;
+  background-position: bottom -1px center, center -80px;  /*разобраться*/
 }
 
 .main-bg img {
@@ -132,7 +129,6 @@ a {
 .copyright p {
   color: black;
 }
-
 
 .filter span {
   font-size: 21px;
@@ -209,6 +205,7 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
+/*index.html*/
 /*Стили по блокам*/
 /*header*/
 .visually-hidden {
@@ -226,22 +223,25 @@ a {
   margin-left: -70px;
   width: 244px;
   right: -35px;
+  
 }
 
 .main-menu {
   position: relative;
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   display: flex;
   align-items: center;
-  left: 8%;  
+  left: 8%;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
-ul { /*можно ли так?*/
+ul {
+  /*можно ли так?*/
   padding-inline-start: 0;
-/*  margin: 0;
-  padding: 0;*/
+  margin: 0;
+  padding: 0;
 }
 
 .main-menu li {
@@ -249,7 +249,7 @@ ul { /*можно ли так?*/
 }
 
 .main-menu li:nth-child(3),
-.main-menu li:nth-child(4)  {
+.main-menu li:nth-child(4) {
   text-align: right;
 }
 
@@ -279,7 +279,7 @@ ul { /*можно ли так?*/
 }
 
 .main-features:last-of-type .features-image {
-  order:-1;
+  order: -1;
 }
 
 .features-list li:nth-child(3),
@@ -292,7 +292,8 @@ ul { /*можно ли так?*/
 
 .features-list li:nth-child(3) .features-title {
   width: 119px;
-  height: 127px; /*потом удалить*/
+  height: 127px;
+  /*потом удалить*/
   margin-left: auto;
   margin-right: auto;
 }
@@ -300,7 +301,8 @@ ul { /*можно ли так?*/
 .features-list li:nth-child(4) .features-title,
 .features-list li:nth-child(5) .features-title {
   width: 100px;
-  height: 127px; /*потом удалить*/
+  height: 127px;
+  /*потом удалить*/
   margin-left: auto;
   margin-right: auto;
 }
@@ -308,29 +310,29 @@ ul { /*можно ли так?*/
 .features-list li:nth-child(3) .features-text {
   width: 210px;
   margin-left: auto;
-  margin-right: auto;  
+  margin-right: auto;
 }
 
 .features-list li:nth-child(4) .features-text {
   width: 263px;
   margin-left: auto;
-  margin-right: auto;  
+  margin-right: auto;
 }
 
-.features-list li:nth-child(5) .features-text { /*нужны ли проблемы, если и так всё норм*/
+.features-list li:nth-child(5) .features-text {
+  /*нужны ли проблемы, если и так всё норм*/
   width: 248px;
   margin-left: auto;
-  margin-right: auto;  
+  margin-right: auto;
 }
 
 /*advices*/
 .advices {
   display: flex;
-  height: 330px /*потом удалить*/
+  height: 330px
+    /*потом удалить*/
 }
 
-
- 
 .apartment,
 .food,
 .souvenirs {
@@ -338,7 +340,8 @@ ul { /*можно ли так?*/
   text-align: center;
 }
 
-/*search-form*/ /*присваивать ли инпутам классы*/
+/*search-form*/
+/*присваивать ли инпутам классы*/
 .form-title,
 .form-text {
   width: 100%;
@@ -346,8 +349,9 @@ ul { /*можно ли так?*/
 }
 
 .form-title {
- padding-top: 10px;
-padding-bottom: 10px; /*delete*/
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /*delete*/
 }
 
 .form-text {
@@ -364,10 +368,8 @@ padding-bottom: 10px; /*delete*/
   border: none;
   margin-bottom: 55px;
   z-index: 20;
-  
+
 }
-
-
 
 .search-hotel {
   position: relative;
@@ -379,15 +381,13 @@ padding-bottom: 10px; /*delete*/
   text-align: center;
   padding-top: 55px;
   padding-bottom: 55px;
-
 }
 
 .form-field {
   display: flex;
   background-color: white;
   z-index: 2;
-  }
-
+}
 
 .label-date {
   width: 112px;
@@ -399,17 +399,14 @@ padding-bottom: 10px; /*delete*/
   margin-bottom: 30px;
 }
 
-.input-date:first-of-type {
+.input-date:first-of-type { /*Что это?*/
   box-sizing: border-box;
-  
- 
 }
 
 .quantity-field {
   display: flex;
   justify-content: space-between;
   padding-bottom: 55px;
-  
 }
 
 .btn-quantity {
@@ -429,15 +426,93 @@ padding-bottom: 10px; /*delete*/
 
 .input-quantity {
   height: 38px;
-  
 }
-
 
 .map {
   position: absolute;
   bottom: 0;
   z-index: 1;
-  
 }
 
+/*footer*/
+.main-footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  bottom: 20px;
+}
 
+.contacts,
+.socials-list,
+.copyright {
+  position: relative;
+  z-index: 30;
+}
+
+.socials-list {
+  display: flex;
+  right: 12px;
+}
+
+.twitter .socials-icon {
+  position: relative;
+  left: 50%;
+  top: 25%;
+  margin-left: -8px;
+}
+
+.facebook .socials-icon {
+  position: relative;
+  left: 50%;
+  top: 25%;
+  margin-left: -6px;
+}
+
+.youtube .socials-icon {
+  position: relative;
+  left: 50%;
+  top: 25%;
+  margin-left: -10px;
+}
+
+.twitter,
+.facebook {
+  margin-right: 5px;
+}
+
+.copyright {
+  display: flex;
+}
+
+.copyright a {
+  margin-left: 15px;
+  align-self: center;
+}
+
+/*catalog.html*/
+/*Стили по блокам*/
+/*search-filters*/
+.search-filters {
+  background-image: url(../img/filter-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center -120px;
+}
+
+/*search-results*/
+.filter {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+}
+
+.filter-type {
+  display: flex;
+  justify-content: space-between;
+  width: 249px;
+}
+
+.hotel {
+  display: flex;
+  flex-direction: column;
+}
