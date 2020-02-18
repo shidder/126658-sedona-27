@@ -219,7 +219,7 @@ ul {
   background-image: url(../img/polygon.png), url(../img/bg.jpg);
   background-color: #81b3d2;
   background-repeat: no-repeat;
-  background-position: bottom -1px center, center -80px;  /*разобраться*/
+  background-position: bottom -1px center, center -80px;
 }
 .main-bg img {
   position: relative;
@@ -302,7 +302,7 @@ ul {
 }
 
 /*search-form*/
-/*присваивать ли инпутам классы*/
+/*присваивать ли инпутам классы?*/
 .form-title,
 .form-text {
   width: 100%;
@@ -349,9 +349,6 @@ ul {
   width: 346px;
   height: 38px;
   margin-bottom: 30px;
-}
-.input-date:first-of-type { /*Что это?*/
-  box-sizing: border-box;
 }
 .quantity-field {
   display: flex;
