@@ -271,7 +271,23 @@ ul {
 .features-list {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
 }
+
+.features-desc {
+  text-align: center;
+  padding-left: 48px;
+  padding-right: 48px;
+  padding-top: 43px;
+  padding-bottom: 43px;
+}
+
+.features-title {
+  padding-left: 76px;
+  padding-right: 76px;
+}
+
+
 
 .main-features {
   display: flex;
@@ -287,32 +303,17 @@ ul {
   order: -1;
 }
 
-.features-list li:nth-child(3),
-.features-list li:nth-child(4),
-.features-list li:nth-child(5) {
-  width: 400px;
-  text-align: center;
-  background-color: #eeeeee;
+
+
+
+.features-list li:nth-child(3) .features-title,
+.features-list li:nth-child(4) .features-title,
+.features-list li:nth-child(5) .features-title {
+  padding-left: 62px;
+  padding-right: 62px;
 }
 
-.features-list li:nth-child(3) .features-title {
-  width: 119px;
-  margin-left: auto;
-  margin-right: auto;
-}
 
-.features-list li:nth-child(3) .features-text {
-  width: 210px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.features-list li:nth-child(5) .features-text {
-  /*нужны ли пробелы, если и так всё норм*/
-  width: 248px;
-  margin-left: auto;
-  margin-right: auto;
-}
 
 /*advices*/
 .advices {
