@@ -3,14 +3,14 @@
 @font-face {
   font-family: "PT Sans";
   src: url("../fonts/ptsans.woff2") format("woff2"),
-    url("../fonts/ptsans.woff") format("woff");
+       url("../fonts/ptsans.woff") format("woff");
   font-weight: 400;
 }
 
 @font-face {
   font-family: "PT Sans";
   src: url("../fonts/ptsansbold.woff2") format("woff2"),
-    url("../fonts/ptsansbold.woff") format("woff");
+       url("../fonts/ptsansbold.woff") format("woff");
   font-weight: 700;
 }
 
@@ -141,6 +141,24 @@ color: rgba(0, 0, 0, 0.3);
   color: black;
 }
 
+.direct-up svg,
+.direct-down svg {
+  fill: #cacaca;
+}
+
+
+.direct-up svg:hover,
+.direct-up svg:focus,
+.direct-down svg:hover,
+.direct-down svg:focus {
+  fill: black;
+}
+
+.direct-up svg:active,
+.direct-down svg:active {
+  fill: #81b3d2;
+}
+
 .active a {
   color: #766357;
 }
@@ -253,6 +271,10 @@ fill: #231f20;
   margin: -1px;
 }
 
+.main-nav {
+  position: relative;
+}
+
 .logo {
   position: absolute;
   left: 50%;
@@ -328,13 +350,7 @@ ul {
   flex-wrap: wrap;
   width: 100%;
 }
-.features-list li:nth-child(3),
-.features-list li:nth-child(4),
-.features-list li:nth-child(5) {
-  padding-top: 50px;
-  padding-bottom: 66px;
-  background-color: #eeeeee;
-}
+
 .features-desc {
   text-align: center;
   padding-left: 48px;
@@ -348,8 +364,6 @@ ul {
   padding-right: 76px;
 }
 
-
-
 .main-features {
   display: flex;
 }
@@ -360,19 +374,28 @@ ul {
   color: #ffffff;
 }
 
-.main-features:last-of-type .features-image {
+.features-image img {
+  display: block;
+}
+
+.second-feature {
   order: -1;
 }
 
+.other-features {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 65px;
+  background-color: #eeeeee;
+}
 
-
-
-.features-list li:nth-child(3) .features-title,
-.features-list li:nth-child(4) .features-title,
-.features-list li:nth-child(5) .features-title {
-  padding-left: 62px;
-  padding-right: 62px;
-  
+.features-item {
+  width: 33.3%;
+  padding-left: 68px;
+  padding-right: 68px;
 }
 
 
@@ -381,6 +404,8 @@ ul {
 .advices {
   display: flex;
   align-items: baseline;
+  position: relative;
+  padding-top: 133px;
 }
 
 .apartment,
@@ -452,14 +477,13 @@ ul {
 
 .search-btn {
   width: 568px;
+  display: block;
   padding-top: 31px;
   padding-right: 10px;
   padding-bottom: 31px;
   padding-left: 10px;
-  position: relative;
-  
-  left: 50%;
-  margin-left: -284px;
+  margin-left: auto;
+  margin-right: auto;
   border: none;
   z-index: 20;
 }
