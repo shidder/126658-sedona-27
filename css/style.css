@@ -405,9 +405,41 @@ ul {
   display: flex;
   align-items: baseline;
   position: relative;
-  padding-top: 133px;
+  padding-top: 130px;
+  text-align: center;
+  padding-bottom: 87px;
 }
 
+.accomodation-icon,
+.food-icon,
+.souvenirs-icon {
+  position: absolute;
+}
+
+.accomodation-icon {
+  bottom: 60%;
+  left: 164px;
+}
+
+.food-icon {
+  bottom: 60%;
+  left: 562px;
+}
+
+.souvenirs-icon {
+  bottom: 60%;
+  right: 168px;
+}
+.apartment,
+.food,
+.souvenirs {
+  width: 33.3%;
+  padding-left: 57px;
+  padding-right: 57px;
+}
+
+
+/*
 .apartment,
 .food,
 .souvenirs {
@@ -524,6 +556,7 @@ ul {
 .btn-quantity {
   height: 38px;
   width: 38px;
+  border: none;
 
 
 }
@@ -555,11 +588,15 @@ ul {
   justify-content: space-between;
   align-items: center;
   background-color: #ffffff;
-  opacity: 0.902;
   padding-top: 35px;
   padding-bottom: 35px;
   padding-left: 125px;
   padding-right: 100px;
+}
+
+.index {
+  
+  opacity: 0.902;
 }
 
 .contacts,
