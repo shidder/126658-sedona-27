@@ -278,9 +278,7 @@ fill: #231f20;
 .logo {
   position: absolute;
   left: 50%;
-  top: 0;
   margin-left: -70px;
-  width: 244px;
   z-index: 60;
 }
 
@@ -405,31 +403,16 @@ ul {
   display: flex;
   align-items: baseline;
   position: relative;
-  padding-top: 130px;
   text-align: center;
+  padding-top: 61px;
   padding-bottom: 87px;
 }
 
-.accomodation-icon,
-.food-icon,
-.souvenirs-icon {
-  position: absolute;
-}
 
-.accomodation-icon {
-  bottom: 60%;
-  left: 164px;
-}
 
-.food-icon {
-  bottom: 60%;
-  left: 562px;
-}
 
-.souvenirs-icon {
-  bottom: 60%;
-  right: 168px;
-}
+
+
 .apartment,
 .food,
 .souvenirs {
@@ -486,6 +469,16 @@ ul {
   padding-bottom: 52px;
 }
 
+.form-field {
+  display: flex;
+  background-color: white;
+  z-index: 2;
+  align-items: center;
+  padding-bottom: 29px
+  
+
+}
+
 .arrival-date {
   padding-right: 21px;
 }
@@ -495,12 +488,14 @@ ul {
 }
 
 
+
 .adults-quantity {
   padding-right: 36px;
 }
 
 .children-quantity {
-  padding-right: 21px;
+  padding-right: 25px;
+  padding-left: 52px;
 }
 
 .input-quantity {
@@ -534,29 +529,32 @@ ul {
   padding-right: 56px;
 }
 
-.form-field {
-  display: flex;
-  background-color: white;
-  z-index: 2;
+.calendar {
+  height: 38px;
+  border: none;
 }
 
 .input-date {
-  padding-right: 200px;
+  padding-right: 153px;
   height: 38px;
-  margin-bottom: 30px;
+  padding-left: 14px;
+  
   
 }
 
 .quantity-field {
   display: flex;
-  justify-content: space-between;
-  padding-bottom: 55px;
+  
+  align-items: center;
 }
 
 .btn-quantity {
   height: 38px;
   width: 38px;
   border: none;
+  color: rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+    font-size: 24px;
 
 
 }
@@ -572,8 +570,18 @@ ul {
   z-index: 2;
 }
 
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button 
+{-webkit-appearance: none;
+    margin:0;
+  }
+
 .input-quantity {
   height: 38px;
+  padding: 0;
+  text-align: center;
+  
 }
 
 /*карта*/
@@ -673,6 +681,10 @@ padding-right: 15px;
   padding-top: 32px;
   padding-bottom: 32px;
 }
+
+.checkbox input[type="checkbox"] {
+  opacity: 0;
+ }
 
 .infrastructure {
   border: none;
