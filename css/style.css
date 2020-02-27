@@ -1,5 +1,5 @@
 /*Общие стили*/
-/*шрифты*/
+/*шрифты и цвета*/
 @font-face {
   font-family: "PT Sans";
   src: url("../fonts/ptsans.woff2") format("woff2"),
@@ -98,7 +98,6 @@ a {
   background-color: #f2f2f2;
   border-style: none;
   font-weight: bold;
-
 }
 
 .filter span {
@@ -106,8 +105,8 @@ a {
   font-weight: bold;
   color: black;
 }
-.filter p
- {
+
+.filter p {
   color: black;
 }
 
@@ -121,8 +120,31 @@ a {
 color: rgba(0, 0, 0, 0.3);
 }
 
+.btn,
+.btn-brown {
+  color: white;
+}
 
+.copyright p {
+  color: black;
+}
 
+.copyright svg {
+fill: #231f20;
+} 
+
+.copyright svg:hover,
+.copyright svg:focus {
+ stroke: #81b3d2;
+ fill: #81b3d2;
+} 
+
+.copyright svg:active {
+  stroke: #bdbbbc;
+  fill: #bdbbbc;
+ } 
+
+/*состояния элементов*/
 .main-menu a:hover,
 .main-menu a:focus,
 .filter-type a:hover,
@@ -137,6 +159,18 @@ color: rgba(0, 0, 0, 0.3);
   color: rgba(0, 0, 0, 0.3);
 }
 
+.active a {
+  color: #766357;
+} 
+
+.input-date:hover {
+  background-color: #ebebeb;
+}
+
+.input-date:focus {
+  background-color: #ffffff;
+}
+
 .filter-type a:active {
   color: black;
 }
@@ -145,7 +179,6 @@ color: rgba(0, 0, 0, 0.3);
 .direct-down svg {
   fill: #cacaca;
 }
-
 
 .direct-up svg:hover,
 .direct-up svg:focus,
@@ -158,33 +191,6 @@ color: rgba(0, 0, 0, 0.3);
 .direct-down svg:active {
   fill: #81b3d2;
 }
-
-.active a {
-  color: #766357;
-}
-
-.copyright p {
-  color: black;
-}
-
-.btn,
-.btn-brown {
-  color: white;
-}
-
-.copyright svg {
-fill: #231f20;
-} 
-.copyright svg:hover,
-.copyright svg:focus {
- stroke: #81b3d2;
- fill: #81b3d2;
-} 
-
-.copyright svg:active {
-  stroke: #bdbbbc;
-  fill: #bdbbbc;
- } 
 
 /*кнопки*/
 .search-btn {
@@ -293,7 +299,6 @@ fill: #231f20;
 
 ul {
   /*можно ли так?*/
-  padding-inline-start: 0;
   margin: 0;
   padding: 0;
 }
@@ -532,6 +537,28 @@ ul {
 .calendar {
   height: 38px;
   border: none;
+
+}
+
+.calendar svg {
+  fill: #cacaca;
+}
+
+.calendar svg:hover {
+  fill: #000000;
+}
+
+.calendar svg:active,
+.btn-quantity:active {
+  fill: #81b3d2;
+}
+
+.btn-quantity:hover {
+  color: #000000;
+}
+
+.btn-quantity:active {
+  color: #81b3d2;
 }
 
 .input-date {
@@ -552,7 +579,7 @@ ul {
   height: 38px;
   width: 38px;
   border: none;
-  color: rgba(0, 0, 0, 0.3);
+  color: #cacaca;
     font-weight: bold;
     font-size: 24px;
 
@@ -626,34 +653,35 @@ margin-top: 0;
   display: flex;
   align-items: center;
   padding-right: 50px;
+  
 
 }
 
-.twitter .socials-icon {
-  position: relative;
-padding-top: 16px;
-padding-bottom: 10px;
-padding-left: 14px;
-padding-right: 15px;
-}
-
-.facebook .socials-icon {
+.twitter {
   padding-top: 13px;
-  padding-bottom: 6px;
+  padding-bottom: 9px;
+  background-color: #81b3d2;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 6px;
+}
+
+.facebook {
+  padding-top: 12px;
+  padding-bottom: 5px;
+  background-color: #81b3d2;
   padding-left: 17px;
   padding-right: 17px;
+  margin-left: 6px;
 }
 
-.youtube .socials-icon {
-  padding-top: 15px;
-  padding-bottom: 10px;
-  padding-left: 13px;
+.youtube {
+  padding-top: 14px;
+  padding-bottom: 7px;
+  background-color: #81b3d2;
+  padding-left: 12px;
   padding-right: 13px;
-}
-
-.twitter,
-.facebook {
-  margin-right: 5px;
+  margin-left: 6px;
 }
 
 .copyright {
@@ -682,14 +710,32 @@ padding-right: 15px;
   padding-bottom: 32px;
 }
 
-.checkbox input[type="checkbox"] {
-  opacity: 0;
- }
+.checkbox  {
+  position: relative;
+  padding-left: 18px;
+}
+
+.checkbox input[type="checkbox"] + .checkbox-indicator {
+  position: absolute;
+  
+width: 23px;
+height: 23px;
+  background-image: url(../img/checkbox-off.svg);
+}
+
+.checkbox input[type="checkbox"]:checked + .checkbox-indicator {
+  position: absolute;
+  
+width: 23px;
+height: 23px;
+  background-image: url(../img/checkbox-on.svg);
+}
+
+
 
 .infrastructure {
   border: none;
-  padding-right: 56px;
-  
+  padding-right: 56px;  
 }
 
 .apartment-type {
@@ -698,6 +744,13 @@ padding-right: 15px;
   padding-right: 173px;
 }
 
+.filter-type .active {
+  color: #81b3d2;
+}
+
+.direct-down .active {
+  fill: #81b3d2;
+}
 /*filter*/
 .filter-range {
   width: 330px;

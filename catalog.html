@@ -36,32 +36,45 @@
         <form class="choose-hotel" action="https://echo.htmlacademy.ru" method="POST">
           <fieldset class="infrastructure">
             <legend>Инфраструктура:</legend>
-            <div class="checkbox">
-              <input class="input-pool" type="checkbox" id="pool" name="pool" value="pool" checked>
-              <label for="pool">Бассейн</label>
+            <div >
+              <label class="checkbox" for="pool">
+              <input class="visually-hidden" type="checkbox" id="pool" name="pool" value="pool" checked>
+              <span class="checkbox-indicator"></span>
+              Бассейн
+            </label>
             </div>
-            <div class="checkbox">
-              <input class="input-parking" type="checkbox" id="parking" name="parking" value="parking">
-              <label for="parking">Парковка</label>
+            <div >
+              <label class="checkbox" for="parking">
+              <input class="visually-hidden" type="checkbox" id="parking" name="parking" value="parking">
+              <span class="checkbox-indicator"></span>
+              Парковка</label>
             </div>
-            <div class="checkbox">
-              <input class="input-wifi" type="checkbox" id="wi-fi" name="wi-fi" value="wi-fi">
-              <label for="wi-fi">Wi-Fi</label>
+            <div >
+              <label class="checkbox" for="wi-fi">
+              <input class="visually-hidden" type="checkbox" id="wi-fi" name="wi-fi" value="wi-fi">
+              <span class="checkbox-indicator"></span>
+              Wi-Fi</label>
             </div>
           </fieldset>
           <fieldset class="apartment-type">
             <legend>Тип жилья:</legend>
-            <div class="checkbox">
-              <input type="checkbox" id="hotel" name="hotel" value="hotel" checked>
-              <label for="hotel">Гостиница</label>
+            <div>
+              <label class="checkbox" for="hotel">
+              <input class="visually-hidden" type="checkbox" id="hotel" name="hotel" value="hotel" checked>
+              <span class="checkbox-indicator"></span>
+              Гостиница</label>
             </div>
-            <div class="checkbox">
-              <input type="checkbox" id="motel" name="motel" value="motel" checked>
-              <label for="motel">Мотель</label>
+            <div>
+              <label class="checkbox" for="motel">
+              <input class="visually-hidden" type="checkbox" id="motel" name="motel" value="motel" checked>
+              <span class="checkbox-indicator"></span>
+              Мотель</label>
             </div>
-            <div class="checkbox">
-              <input type="checkbox" id="apartments" name="apartments" value="apartments" checked>
-              <label for="apartments">Апартаменты</label>
+            <div>
+              <label class="checkbox" for="apartments">
+              <input class="visually-hidden" type="checkbox" id="apartments" name="apartments" value="apartments" checked>
+              <span class="checkbox-indicator"></span>
+              Апартаменты</label>
             </div>
           </fieldset>
          
@@ -79,7 +92,7 @@
         <div class="range-toggle range-toggle-max"></div>
             <button class="btn-transparent" type="submit">Показать</button>
           </div>
-          
+          </div>
         </form>
       </section>
       <section class="search-results">
@@ -88,20 +101,20 @@
           <span>Найдено: 3</span>
           <p>Сортировка:</p>
           <div class="filter-type">
-            <a class="price-filter" href="#">По цене</a>
+            <a class="price-filter active" href="#">По цене</a>
             <a class="type-filter" href="#">По типу</a>
             <a class="rate-filter" href="#">По рейтингу</a>
           </div>
           <ul class="filter-direct">
             <li class="direct-up">
-              <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
                 <path  d="M5.5 0L0 10h11z"/>
-            </svg></a>
+            </svg>
             </li>
             <li class="direct-down">
-              <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+              <svg class="active" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
                 <path d="M5.5 10L0 0h11"/>
-            </svg></a>
+            </svg>
             </li>
           </ul>
         </div>
@@ -181,19 +194,28 @@
         <a href="tel:+74956660266">Тел: +7(495) 666-02-66</a>
       </div>
       <ul class="socials-list">
-        <li class="socials-item twitter">
+        <li class="socials-item">
           <a href="https://twitter.com/">
-            <img class="socials-icon" src="img/tw-icon.svg" width="17" height="15">
+            <svg class="twitter" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15" viewBox="0 0 17 15">
+              <image width="17" height="15" overflow="visible" xlink:href="t.png"/>
+              <path fill="#FFF" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z"/>
+          </svg>
+          
           </a>
         </li>
         <li class="socials-item facebook">
           <a href="https://facebook.com/">
-            <img class="socials-icon" src="img/fb-icon.svg" width="12" height="22">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22">
+              <path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/>
+          </svg>
           </a>
         </li>
         <li class="socials-item youtube">
           <a href="https://youtube.com/">
-            <img class="socials-icon" src="img/youtube-icon.svg" width="20" height="16">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16" viewBox="0 0 20 16">
+              <image width="20" height="16" overflow="visible" xlink:href="youtube.png"/>
+              <path fill="#FFF" d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z"/>
+          </svg>
           </a>
         </li>
       </ul>
