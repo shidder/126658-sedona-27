@@ -34,6 +34,11 @@
   background-color: #ffffff;
 }
 
+.desc-title {
+  font-weight: bold;
+  padding-bottom: 12px;
+}
+
 a {
   text-decoration: none;
 }
@@ -325,14 +330,14 @@ ul {
 
 /*main*/
 .main-desc {
-  padding-top: 61px;
-  padding-bottom: 56px;
+  padding-top: 60px;
+  padding-bottom: 36px;
 }
 
 .desc-title {
   text-align: center;
   padding-left: 380px;
-  padding-bottom: 38px;
+  padding-bottom: 10px;
   padding-right: 380px;
   margin-top: 0;
   margin-bottom: 0;
@@ -368,7 +373,7 @@ ul {
   text-align: center;
   padding-left: 48px;
   padding-right: 48px;
-  padding-top: 43px;
+  padding-top: 29px;
   padding-bottom: 43px;
 }
 
@@ -1018,8 +1023,12 @@ padding-top: 4px;
 
 .three-stars {
   width: 65px;
+  position: relative;
+  left: 20px;
 }
 
 .two-stars {
   width: 41px;
+  position: relative;
+    left: 45px;
 }
