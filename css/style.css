@@ -100,21 +100,21 @@ a {
   font-weight: bold;
 }
 
-.filter span {
+.filter  {
   font-size: 21px;
   font-weight: bold;
   color: black;
 }
 
-.filter p {
-  color: black;
-}
 
 .filter-type,
-.filter p {
+.filter-type span {
   font-size: 12px;
   line-height: 18px;
+  font-weight: normal;
 }
+
+
 
 .filter-type a {
 color: rgba(0, 0, 0, 0.3);
@@ -126,7 +126,7 @@ color: rgba(0, 0, 0, 0.3);
 
 .apartment-type legend,
 .infrastructure legend {
-  font-weight: bolder;
+  font-weight: bold;
 }
 
 .btn,
@@ -296,6 +296,10 @@ fill: #231f20;
   left: 50%;
   margin-left: -70px;
   z-index: 60;
+}
+
+.logo img {
+  display: block;
 }
 
 .main-menu {
@@ -711,6 +715,10 @@ input[type=number]::-webkit-outer-spin-button {
   padding-bottom: 21px;
 }
 
+.filter-type span {
+  padding-right: 40px;
+}
+
 .filter-type .active {
   color: #81b3d2;
 }
@@ -866,16 +874,12 @@ padding-right: 31px;
 }
 
 .type-filter {
-  margin-right: 31px;
+  padding-right: 31px;
 } 
-
-.rate-filter {
-  margin-right: 253px;
-}
 
 .filter-direct {
   display: flex;
-  padding-left: 253px;
+  margin-left: auto;
 }
 
 .direct-up {
@@ -904,6 +908,10 @@ padding-right: 31px;
   padding-top: 4px;
 }
 
+.hotel-image img {
+  display: block;
+}
+
 .hotel-name {
   margin-top: 0;
   margin-bottom: 0;
@@ -918,10 +926,11 @@ padding-right: 31px;
 .hotel-price p {
   margin-top: 0;
   margin-bottom: 0;
-  padding-bottom: 15px;
+  padding-bottom: 5px;
 }
 
 .btn {
+  display: block;
   padding-top: 8px;
   padding-bottom: 7px;
   padding-left: 17px;
@@ -952,12 +961,23 @@ padding-right: 31px;
 
 .four-stars {
   width: 89px;
+  position: relative;
+  left: 26px;
 }
 
 .three-stars {
   width: 65px;
+  position: relative;
+  left: 46px;
 }
 
 .two-stars {
   width: 41px;
+  position: relative;
+  left: 70px;
+}
+
+.rating-score {
+  background-color: #f2f2f2;
+  padding: 5px 13px 6px 16px;
 }
