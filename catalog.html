@@ -36,7 +36,7 @@
         <form class="choose-hotel" action="https://echo.htmlacademy.ru" method="POST">
           <fieldset class="infrastructure">
             <legend>Инфраструктура:</legend>
-            <div>
+            <div class="pool">
               <label class="checkbox" for="pool">
                 <input class="visually-hidden" type="checkbox" id="pool" name="pool" value="pool" checked>
                 <span class="checkbox-indicator"></span>
@@ -106,17 +106,17 @@
             <a class="type-filter" href="#">По типу</a>
             <a class="rate-filter" href="#">По рейтингу</a>
           </div>
-          <div class="filter-direct">
-            <a class="direct-up">
+          <div class="filter-direct" >
+            <button class="direct-up" type="button" aria-label="Сортировка по возрастанию">
               <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
                 <path d="M5.5 0L0 10h11z" />
               </svg>
-            </a>
-            <a class="direct-down">
+            </button>
+            <button class="direct-down" type="button" aria-label="Сортировка по убыванию">
               <svg class="active" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
                 <path d="M5.5 10L0 0h11" />
               </svg>
-            </a>
+            </button>
           </div>
         </div>
         <div class="hotel-items">
@@ -138,7 +138,7 @@
               </div>
             </div>
             <div class="hotel-rating">
-              <div class="star four-stars"></div>
+              <div class="star four-stars" aria-label="4 звезды"></div>
               <p class="rating-score">Рейтинг: 8,5</p>
             </div>
           </article>
@@ -160,7 +160,7 @@
               </div>
             </div>
             <div class="hotel-rating">
-              <div class="star three-stars"></div>
+              <div class="star three-stars" aria-label="3 звезды"></div>
               <p class="rating-score">Рейтинг: 8,9</p>
             </div>
           </article>
@@ -182,7 +182,7 @@
               </div>
             </div>
             <div class="hotel-rating">
-              <div class="star two-stars"></div>
+              <div class="star two-stars" aria-label="2 звезды"></div>
               <p class="rating-score">Рейтинг: 9,2</p>
             </div>
           </article>
