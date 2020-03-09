@@ -36,46 +36,40 @@
         <form class="choose-hotel" action="https://echo.htmlacademy.ru" method="POST">
           <fieldset class="infrastructure">
             <legend>Инфраструктура:</legend>
-            <div class="pool">
-              <label class="checkbox" for="pool">
-                <input class="visually-hidden" type="checkbox" id="pool" name="pool" value="pool" checked>
-                <span class="checkbox-indicator"></span>
-                Бассейн
-              </label>
+            <div class="pool">              
+                <input class="visually-hidden input-checkbox" type="checkbox" id="pool" name="pool" value="pool" checked>
+                <label class="checkbox" for="pool">Бассейн</label>
             </div>
             <div>
-              <label class="checkbox" for="parking">
-                <input class="visually-hidden" type="checkbox" id="parking" name="parking" value="parking">
-                <span class="checkbox-indicator"></span>
-                Парковка</label>
+                <input class="visually-hidden input-checkbox" type="checkbox" id="parking" name="parking" value="parking">
+                <label class="checkbox" for="parking">Парковка</label>                
             </div>
-            <div>
-              <label class="checkbox" for="wi-fi">
-                <input class="visually-hidden" type="checkbox" id="wi-fi" name="wi-fi" value="wi-fi">
-                <span class="checkbox-indicator"></span>
-                Wi-Fi</label>
+            <div>              
+                <input class="visually-hidden input-checkbox" type="checkbox" id="wi-fi" name="wi-fi" value="wi-fi">
+                <label class="checkbox" for="wi-fi">Wi-Fi</label>                
             </div>
           </fieldset>
+
+
+
           <fieldset class="apartment-type">
             <legend>Тип жилья:</legend>
             <div>
-              <label class="checkbox" for="hotel">
-                <input class="visually-hidden" type="checkbox" id="hotel" name="hotel" value="hotel" checked>
-                <span class="checkbox-indicator"></span>
-                Гостиница</label>
+                <input class="visually-hidden input-checkbox" type="checkbox" id="hotel" name="hotel" value="hotel" checked>
+                <label class="checkbox" for="hotel">Гостиница</label>
+              </div>
+            <div>
+              
+                <input class="visually-hidden input-checkbox" type="checkbox" id="motel" name="motel" value="motel" checked>
+                <label class="checkbox" for="motel">Мотель</label>
+                
             </div>
             <div>
-              <label class="checkbox" for="motel">
-                <input class="visually-hidden" type="checkbox" id="motel" name="motel" value="motel" checked>
-                <span class="checkbox-indicator"></span>
-                Мотель</label>
-            </div>
-            <div>
-              <label class="checkbox" for="apartments">
-                <input class="visually-hidden" type="checkbox" id="apartments" name="apartments" value="apartments"
+              
+                <input class="visually-hidden input-checkbox" type="checkbox" id="apartments" name="apartments" value="apartments"
                   checked>
-                <span class="checkbox-indicator"></span>
-                Апартаменты</label>
+                  <label class="checkbox" for="apartments">Апартаменты</label>
+                
             </div>
           </fieldset>
           <div class="filter-range">
@@ -99,7 +93,6 @@
         <h2 class="visually-hidden">Результаты поиска</h2>
         <div class="filter">
           <span>Найдено: 3</span>
-          
           <div class="filter-type">
             <span>Сортировка:</span>
             <a class="price-filter active" href="#">По цене</a>
@@ -199,7 +192,6 @@
           <a href="https://twitter.com/">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15"
               viewBox="0 0 17 15">
-
               <path fill="#FFF"
                 d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z" />
             </svg>
