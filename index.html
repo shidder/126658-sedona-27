@@ -14,7 +14,7 @@
           <img src="img/logo-sedona.png" width="140" height="71" alt="Логотип Седоны">
         </a>
         <ul class="main-menu">
-          <li class="active">
+          <li>
             <a href="#">Информация</a>
           </li>
           <li>
@@ -88,8 +88,7 @@
                 <h3 class="advices-title">Сувениры</h3>
                 <p class="advices-text">Не только китайского, но и&nbsp;местного производства!</p>
               </div>
-            </div>
-          
+            </div>          
           <div class="main-features">
             <div class="features-desc">
               <h3 class="features-title">Там есть<br> мост дьявола</h3>
@@ -130,7 +129,7 @@
         <form class="search-hotel" action="https://echo.htmlacademy.ru" method="POST">
           <div class="form-field">
             <label class="arrival-date" for="arrival">Дата заезда:</label>
-            <input class="input-date" type="text" id="arrival" name="arrival" value="2017-04-24">
+            <input class="input-date" type="text" id="arrival" name="arrival" value="24 апреля 2017">
             <button class="calendar" type="button">
               <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22"
                 viewBox="0 0 21 22">
@@ -139,11 +138,11 @@
                 <path
                   d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z" />
               </svg>
-            </button>
+           </button>          
           </div>
           <div class="form-field">
             <label class="depature-date" for="departure">Дата выезда:</label>
-            <input class="input-date" type="text" id="departure" name="departure" value="2017-07-04">
+            <input class="input-date" type="text" id="departure" name="departure" value="4 июля 2017">
             <button class="calendar" type="button">
               <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22"
                 viewBox="0 0 21 22">
@@ -167,10 +166,8 @@
               <input class="input-quantity" type="number" id="children" name="children" value="0">
               <button class="btn-quantity" type="button">+</button>
             </div>
-          </div>
-          
-            <button class="result-btn" type="submit">Найти</button>
-          
+          </div>          
+            <button class="result-btn" type="submit">Найти</button>          
         </form>
       </section>
       <div class="map">
@@ -222,5 +219,13 @@
       </div>
     </footer>
    </div>
+   <script>
+    var button = document.querySelector(".search-btn"); 
+    var popup = document.querySelector(".search-hotel"); 
+      button.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      popup.classList.add("search-show");
+   }); 
+  </script>
 </body>
 </html>
