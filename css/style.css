@@ -320,6 +320,7 @@ a {
 .main-menu {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 72px;
@@ -330,14 +331,15 @@ a {
   width: 25%;
 }
 
-.main-menu li:nth-child(3),
-.main-menu li:nth-child(4) {
+
+.main-menu li:nth-child(4n+3),
+.main-menu li:nth-child(4n+4) {
   text-align: right;
 }
 
-.main-menu li:nth-child(2) {
-  margin-right: 95px;
-}
+
+
+
 
 /*main*/
 .main-desc {
@@ -615,7 +617,10 @@ a {
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
-  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 .input-quantity {
@@ -757,6 +762,10 @@ input[type=number]::-webkit-outer-spin-button {
   width: 27px;
   height: 23px;
   background-image: url(../img/checkbox-on.svg);
+}
+
+.input-checkbox:focus+label::before {
+  outline: auto;
 }
 
 .input-checkbox:disabled + label::before {
@@ -990,7 +999,7 @@ input[type=number]::-webkit-outer-spin-button {
   padding-left: 72px;
   padding-right: 72px;
   padding-top: 25px;
-  padding-bottom: 15px;
+  padding-bottom: 31px;
 }
 
 .hotel-wrapper {
@@ -1057,7 +1066,7 @@ input[type=number]::-webkit-outer-spin-button {
 .three-stars,
 .two-stars
  {
-  padding-bottom: 66px;
+  padding-bottom: 50px;
   margin-left: auto;
 }
 
