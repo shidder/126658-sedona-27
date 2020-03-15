@@ -596,26 +596,76 @@ a {
 }
 
 @-webkit-keyframes show {
-  0% {
-    -webkit-transform: translateY(-70px);
-            transform: translateY(-70px);
-  }
-    100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    }
-  }
+	0% {
+		-webkit-transform: translateY(-70px);
+		transform: translateY(-70px);
+	}
+	100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+}
 
 @keyframes show {
-  0% {
-    -webkit-transform: translateY(-70px);
-            transform: translateY(-70px);
-  }
-    100% {
-      -webkit-transform: translateY(0);
-              transform: translateY(0);
-    }
-  }
+	0% {
+		-webkit-transform: translateY(-70px);
+		transform: translateY(-70px);
+	}
+	100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+}
+
+@-webkit-keyframes shake {
+	0%,
+	100% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+	10%,
+	30%,
+	50%,
+	70%,
+	90% {
+		-webkit-transform: translateX(-10px);
+		transform: translateX(-10px);
+	}
+	20%,
+	40%,
+	60%,
+	80% {
+		-webkit-transform: translateX(10px);
+		transform: translateX(10px);
+	}
+}
+
+@keyframes shake {
+	0%,
+	100% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+	10%,
+	30%,
+	50%,
+	70%,
+	90% {
+		-webkit-transform: translateX(-10px);
+		transform: translateX(-10px);
+	}
+	20%,
+	40%,
+	60%,
+	80% {
+		-webkit-transform: translateX(10px);
+		transform: translateX(10px);
+	}
+}
+
+.search-error {
+  animation: shake 0.6s;
+}
 
 .search-close {
   display: none;
@@ -685,6 +735,10 @@ input[type=number] {
 /*карта*/
 .map {
   margin-bottom: -127px;
+}
+
+.map iframe {
+  border: 0;
 }
 
 /*footer*/
